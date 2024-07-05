@@ -8,7 +8,6 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const ExperenceCard = ({ experience }: { experience: Experience }) => {
   return (
@@ -20,7 +19,7 @@ const ExperenceCard = ({ experience }: { experience: Experience }) => {
       iconStyle={{ background: "#000319", color: "#fff" }}
       icon={
         <div className="flex justify-center items-center w-full h-full">
-          <Image
+          <img
             src={`${experience.icon}`}
             alt={experience.institution}
             className="w-[60%] h-[60%] object-contain"
